@@ -4,6 +4,13 @@
     margin:0;
     padding:0;
 }
+%CSScenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 body{
     
     padding:0;
@@ -57,6 +64,11 @@ body{
                 ul{
                     list-style-type: none;
                     li{
+                        button{
+                            color: #fff;
+                            background-color: unset;
+                            border-color: unset;
+                        }
                         padding: 50px 22px;
                         display:inline-table;
                         cursor: pointer;
@@ -93,6 +105,11 @@ body{
                  ul{
                      list-style-type: none;
                      li{
+                        button{
+                            color: #fff;
+                            background-color: unset;
+                            border-color: unset;
+                        }
                          padding: 55px 18px;
                          display:inline-table;
                          a{
@@ -718,7 +735,6 @@ body{
 
 }
 
-
 // FOODTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 .foodter{
     
@@ -1278,4 +1294,290 @@ display:none;
             }
           }
       }
+  }
+
+  //MODAL----------------LOGIN  
+  .modal-dialog.modal-dialog-centered {
+    max-width: 900px;
+}
+    button.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+  .modal--login{
+      display:flex;
+      flex-direction: row;
+      width:100%;
+      padding: 0;
+      .body__siderbar1:before{ 
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.85);
+         z-index: -1;
+
+      }
+      .body__siderbar1{
+          flex:50%;
+          position: relative;
+          padding: 20px;
+          background-size: cover;
+          background-image: url('https://pictures.topspeed.com/IMG/crop/201810/-vinfast-a2-10_800x0w.jpg');
+          background-position: center center;
+          color: #fff;
+          min-height: 540px;
+          position: relative;
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+          transition: all 0.6s cubic-bezier(1, -0.375, 0.285, 0.995);
+          z-index: 9999;
+          .logo{
+            color: #f8dd5a;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            line-height: 1em;
+          }
+          .heading{
+            @extend %CSScenter;
+            text-align: center;
+            transition: all 0.6s;
+            h2{
+                font-size: 70px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                font-family: "Baloo";
+            }
+            p{
+                font-size: 15px;
+                 font-weight: 300;
+                text-transform: uppercase;
+                 letter-spacing: 2px;
+            }
+          }
+      }
+      .body__siderbar2{
+        flex:50%;
+        position: relative;
+        overflow: hidden;
+        .form--login{
+            background: #fff;
+            min-height: 480px;
+            margin-top: 30px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            color: #bbbbbb;
+            padding: 30px 0 60px;
+            transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995);
+            position: absolute;
+            top: 0;
+            left: -30%;
+            width: 130%;
+            overflow: hidden;
+            .login-form{
+                padding: 0 40px;
+                margin: 0;
+                width: 70%;
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+                .form-group{
+                    margin-bottom: 5px;
+                    position: relative;
+                    label{
+                        font-size: 12px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        font-family: "Montserrat", sans-serif;
+                        transition: all 0.4s;
+                        cursor: text;
+                        z-index: -1;
+                        transform: translateY(40px);
+                    }
+                    .active--label{
+                        transform: translateY(10px);
+                        font-size:10px;
+                    }
+                    input{
+                        background: none;
+                        outline: none;
+                        border: none;
+                        display: block;
+                        padding: 10px 0;
+                        width: 100%;
+                        border-bottom: 1px solid #eee;
+                        color: #444;
+                        font-size: 15px;
+                        font-family: "Montserrat", sans-serif;
+                        z-index: 1;
+                    }
+                }
+                .CTA{
+                    margin-top: 30px;
+                    input{
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        padding: 5px 30px;
+                        background: #f8dd5a;
+                        color: #fff;
+                        border-radius: 30px;
+                        margin-right: 20px;
+                        border: none;
+                    }
+                    a{
+                        font-size: 13px;
+                        font-weight: 400;
+                        font-family: "Montserrat", sans-serif;
+                        color: #bbbbbb;
+                        text-decoration: underline;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+        .form-signup{
+            background: #fff;
+            min-height: 480px;
+            margin-top: 30px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            color: #bbbbbb;
+            padding: 30px 0 60px;
+            transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995);
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+            z-index:50;
+        }
+        .active-signup{
+            transform: translateX(-100%); 
+            left: 0%;
+            width: 100%;
+        }
+        .signup-form{
+            padding: 0 40px;
+            margin: 0;
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            .form-group{
+                margin-bottom: 5px;
+                position: relative;
+                label{
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-family: "Montserrat", sans-serif;
+                    transform: translateY(40px);
+                    transition: all 0.4s;
+                    cursor: text;
+                    z-index: -1;
+                }
+                .active--label{
+                    transform: translateY(10px);
+                    font-size:10px;
+                }
+                input{
+                    background: none;
+                    outline: none;
+                    border: none;
+                    display: block;
+                    padding: 10px 0;
+                    width: 100%;
+                    border-bottom: 1px solid #eee;
+                    color: #444;
+                    font-size: 15px;
+                    font-family: "Montserrat", sans-serif;
+                    z-index: 1;    
+                }
+            }
+            .CTA{
+                margin-top: 30px;
+                input{
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    padding: 5px 30px;
+                    background: #f8dd5a;
+                    color: #fff;
+                    border-radius: 30px;
+                    margin-right: 20px;
+                    border: none;
+                }
+                a{
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-family: "Montserrat", sans-serif;
+                    color: #bbbbbb;
+                    text-decoration: underline;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+    .opacity--0{
+    left: 0%;
+    width: 100%;
+    transform: translateX(-100%);
+    }
+    .opacity--1{
+        left: -30%;
+        width: 130%;
+        transform: translateX(0%);
+    }
+    .signup.form-signup.active-signup.opacity--1{
+            left: -30%;
+            width: 130%;
+            transform: translateX(0%);
+    }
+    .active-label{
+        transform: translateY(10px);
+    }
+    .modal--login .body__siderbar2 .signup-form .form-group label.active-label{
+        transform: translateY(10px);
+    }
+    span.error{
+        color:#f8dd5a;
+        font-size: 12px;
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+    }
+  }
+
+  @media(max-width:768px){
+      .modal--login{
+          display:flex;
+          flex-direction: column;
+          .body__siderbar1{
+              flex:100%;
+              min-height:250px;
+              .heading{
+                  h2{
+                      font-size:35px;
+                  }
+              }
+          }
+          .body__siderbar2{
+              flex:100%;
+              min-height:500px;
+              .form-signup{
+                  margin-top:0;
+              }
+          }
+      }
+      .modal-dialog.modal-dialog-centered {
+        width: 95%;
+        margin: auto;
+    }
+    button.close {
+        z-index: 10000;
+        color:#fff;
+    }
   }
