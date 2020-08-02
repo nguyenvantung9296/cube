@@ -9,6 +9,47 @@
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.container-fluid .row__row--sec2 .menu__2 ul li a:before, .container-fluid .row__row--sec3 .menu__2 ul li a:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #f8dd5a;
+  transition: .5s ease-in-out; }
+
+.container-fluid .row__row--sec3 .carousel .carousel__inner .carousel__item .caro__item .content__title button:before, .contentBig .row--section3 .owl--carousel .item .content__p2 button button:before, .contentBig .row--section5 .content__p1 .content-title button:before, .contentBig .row--section9 .content button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #3e3e3e;
+  z-index: -1;
+  transition: .5s ease-out; }
+
+.contentBig .row--section3 .owl--carousel .owl-nav .owl-prev:before, .contentBig .row--section3 .owl--carousel .owl-nav .owl-next:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #f8dd5a;
+  z-index: -1;
+  transition: .5s ease-out; }
+
+.contentBig .row--section3 .owl--carousel .owl-nav .owl-prev, .contentBig .row--section3 .owl--carousel .owl-nav .owl-next {
+  margin: 0;
+  border-left: 1px solid #fff;
+  background: #303033;
+  padding: 15px 21px !important;
+  position: relative;
+  transition: .5s ease-in-out;
+  z-index: 2; }
+
 body {
   padding: 0;
   width: 100%;
@@ -62,7 +103,17 @@ body {
             .container-fluid .row__row--sec2 .menu__2 ul li button {
               color: #fff;
               background-color: unset;
-              border-color: unset; }
+              border-color: unset;
+              border: none; }
+            .container-fluid .row__row--sec2 .menu__2 ul li button:hover {
+              background: unset; }
+            .container-fluid .row__row--sec2 .menu__2 ul li a {
+              position: relative;
+              transition: .5s ease-in-out; }
+            .container-fluid .row__row--sec2 .menu__2 ul li a:hover:before {
+              width: 100%; }
+            .container-fluid .row__row--sec2 .menu__2 ul li a:hover {
+              color: #3e3e3e; }
           .container-fluid .row__row--sec2 .menu__2 ul .li--last {
             padding-right: 0; }
           .container-fluid .row__row--sec2 .menu__2 ul .li--hid {
@@ -98,7 +149,13 @@ body {
               text-transform: uppercase;
               font-weight: 600;
               cursor: pointer;
-              font-size: 12px; }
+              font-size: 12px;
+              position: relative;
+              transition: .5s ease-in-out; }
+            .container-fluid .row__row--sec3 .menu__2 ul li a:hover:before {
+              width: 100%; }
+            .container-fluid .row__row--sec3 .menu__2 ul li a:hover {
+              color: #3e3e3e; }
           .container-fluid .row__row--sec3 .menu__2 ul .li--firt {
             color: #303033; }
           .container-fluid .row__row--sec3 .menu__2 ul .li--last {
@@ -166,7 +223,10 @@ body {
               color: #fff;
               font-weight: 600;
               margin-top: 60px;
-              font-size: 10px; }
+              font-size: 10px;
+              position: relative; }
+            .container-fluid .row__row--sec3 .carousel .carousel__inner .carousel__item .caro__item .content__title button:hover:before {
+              width: 100%; }
         .container-fluid .row__row--sec3 .carousel .carousel__inner .carousel__item .caro__item .content__2 {
           width: 16%;
           background: #26262a;
@@ -279,21 +339,20 @@ body {
       left: 25%;
       bottom: 0%;
       display: block; }
-      .contentBig .row--section3 .owl--carousel .owl-nav .owl-prev {
-        margin: 0;
-        background: #303033;
-        padding: 15px 21px !important; }
-        .contentBig .row--section3 .owl--carousel .owl-nav .owl-prev span {
-          font-size: 15px;
-          color: #fff; }
-      .contentBig .row--section3 .owl--carousel .owl-nav .owl-next {
-        margin: 0;
-        border-left: 1px solid #fff;
-        background: #303033;
-        padding: 15px 21px !important; }
-        .contentBig .row--section3 .owl--carousel .owl-nav .owl-next span {
-          font-size: 15px;
-          color: #fff; }
+      .contentBig .row--section3 .owl--carousel .owl-nav .owl-prev span {
+        font-size: 15px;
+        color: #fff; }
+      .contentBig .row--section3 .owl--carousel .owl-nav .owl-prev:hover:before {
+        width: 100%; }
+      .contentBig .row--section3 .owl--carousel .owl-nav .owl-prev:hover span {
+        color: #111111; }
+      .contentBig .row--section3 .owl--carousel .owl-nav .owl-next span {
+        font-size: 15px;
+        color: #fff; }
+      .contentBig .row--section3 .owl--carousel .owl-nav .owl-next:hover:before {
+        width: 100%; }
+      .contentBig .row--section3 .owl--carousel .owl-nav .owl-next:hover span {
+        color: #111111; }
     .contentBig .row--section3 .owl--carousel .item .content__p1 {
       position: relative;
       grid-column: 1/2; }
@@ -439,7 +498,10 @@ body {
             text-transform: uppercase;
             margin-right: 20px;
             font-size: 12px;
-            background: #0000004f; }
+            background: #0000004f;
+            position: relative; }
+          .contentBig .row--section5 .content__p1 .content-title button:hover:before {
+            width: 100%; }
           .contentBig .row--section5 .content__p1 .content-title p {
             font-size: 18px;
             color: #fff;
@@ -465,7 +527,10 @@ body {
             text-transform: uppercase;
             background: #0000004f;
             color: #fff;
-            border: none; }
+            border: none;
+            transition: .5s ease-out; }
+          .contentBig .row--section5 .content__p2--1 button:hover {
+            background: #3e3e3e; }
           .contentBig .row--section5 .content__p2--1 .image__moto {
             display: none; }
           .contentBig .row--section5 .content__p2--1 .moto--active {
@@ -503,7 +568,10 @@ body {
             text-transform: uppercase;
             background: #0000004f;
             color: #fff;
-            border: none; }
+            border: none;
+            transition: .5s ease-out; }
+          .contentBig .row--section5 .content__p2--2 button:hover {
+            background: #3e3e3e; }
   .contentBig .section--7 {
     margin-bottom: 20px; }
   .contentBig .section8 .content__p1 {
@@ -538,7 +606,14 @@ body {
         color: #303033;
         background: #f8dd5a;
         border: none;
-        font-weight: 600; }
+        font-weight: 600;
+        position: relative;
+        z-index: 2;
+        transition: .5s ease-in-out; }
+      .contentBig .row--section9 .content button:hover:before {
+        width: 100%; }
+      .contentBig .row--section9 .content button:hover {
+        color: #fff; }
   .contentBig .row--section10 .content {
     width: 100%;
     display: grid;
@@ -598,6 +673,8 @@ body {
         margin-bottom: 0; }
         .foodter .fooodter1 .foodter--sec2 ul li {
           padding: 18px 4px; }
+          .foodter .fooodter1 .foodter--sec2 ul li img {
+            cursor: pointer; }
   .foodter .foodter2 {
     position: relative;
     max-width: 1240px;
@@ -612,7 +689,21 @@ body {
       .foodter .foodter2__content ul li {
         font-size: 13px;
         padding-bottom: 24px;
-        color: #fff; }
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+      .foodter .foodter2__content ul li:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -15px;
+        height: 15px;
+        width: 4px;
+        background: #f8dd5a;
+        transition: .5s ease-in-out;
+        opacity: 0; }
+      .foodter .foodter2__content ul li:hover:before {
+        opacity: 1; }
     .foodter .foodter2 .content--1 {
       width: 20%; }
     .foodter .foodter2 .content--2 {
@@ -1240,5 +1331,10 @@ button.close {
   button.close {
     z-index: 10000;
     color: #fff; } }
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #ffffff1f; }
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #ffffff1f; }
 
 /*# sourceMappingURL=index.css.map */
