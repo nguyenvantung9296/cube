@@ -19,28 +19,30 @@
 </head>
 
 <body>
-    <div class="background__body"></div>
-    <div class="container-fluid header">
-        <div class="row row--section">
+  <div class="background__body"></div>
+  <header>
+    <div class="container-fluid">
+        <div class="row header--color">
             <div class="col-md-12 col--flex">
-                <div class="color__1"></div>
-                <div class="color__2"></div>
+                <div class="color__left"></div>
+                <div class="color__right"></div>
             </div>
         </div>
-        <div class="row row__row--sec2">
+        <div class="row header--wrap">
             <div class="menu menu--nav">
-                <div class="menu__1">
+                <div class="menu__logo">
                     <img src="image/log.png" alt="">
                 </div>
-                <div class="menu__2">
+                <div class="menu__icon">
                     <img class="icon--nav" src="image/nav.png" alt="">
                 </div>
             </div>
-            <div class="menu  menu__fa">
-                <div class="menu__1 menu--active">
+            <div class="menu menu--fa">
+                <i class=" icon--nav fas fa-times" aria-hidden="true"></i>
+                <div class="menu__logo menu--active">
                     <img src="image/log.png" alt="">
                 </div>
-                <div class="menu__2">
+                <div class="menu__icon">
                     <ul>
                         <li>
                             <img src="image/logo1.png" alt="">
@@ -89,12 +91,12 @@
             </div>
         </div>
 
-        <div class="row row__row--sec3">
+        <div class="row header--nav">
             <div class="menu">
-                <div class="menu__1">
+                <div class="menu__logo">
                     <img src="image/logo4.png" alt="">
                 </div>
-                <div class="menu__2">
+                <div class="menu__icon">
                     <ul>
                         <li class="li--firt">
                             <a href="">Shop</a>
@@ -116,7 +118,7 @@
             </div>
         </div>
 
-        <div class="row row__row--sec3">
+        <div class="row header--banner">
             <div id="carouselId" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselId" data-slide-to="0" class="active">1</li>
@@ -283,13 +285,15 @@
                                 <form class="login-form" action="index.html" method="post">
                                     <div class="form-group">
                                         <label for="loginemail" class="">Địa chỉ Email</label>
-                                        <input type="email" name="loginemail" id="loginemail" class="login--email" required="">
+                                        <input type="email" name="loginemail" id="loginemail" class="login--email"
+                                            required="">
                                         <span class="error"></span>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="loginPassword">Mật Khẩu</label>
-                                        <input type="password" name="loginPassword" id="loginPassword" class="login--Password" required="">
+                                        <input type="password" name="loginPassword" id="loginPassword"
+                                            class="login--Password" required="">
                                         <span class="error"></span>
                                     </div>
 
@@ -350,11 +354,12 @@
             </div>
         </div>
     </div>
+  </header>
 
 
     <div class="container-fluid">
         <div class="contentBig">
-            <div class="row row--section1">
+            <div class="row row--title">
                 <div class="row__title">
                     <h3>BEST SELLER</h3>
                     <p>TOP PRODUCTS OF THIS WEEK
@@ -362,7 +367,7 @@
                 </div>
             </div>
             <!-- SECTION-BEGIN-2 -->
-            <div class="row row--section2">
+            <div class="row row--service">
                 <div class="content">
                     <div class="content__p1">
                         <div class="img__p1">
@@ -385,37 +390,7 @@
                 </div>
             </div>
             <!-- SECTION-BEGIN-3 -->
-            <div class="row row--section3">
-                <!-- <div class="content">
-                    <div class="content__p1">
-                        <img src="image/oto1.png" alt="">
-                        <button>add to cart
-                            <img src="image/cart.png" alt="">
-                        </button>
-                        <div class="icon--cart">
-                            <img src="image/iconcart.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="content__p2">
-                        <img src="image/oto2.png" alt="">
-                        <button>add to cart
-                            <img src="image/cart.png" alt="">
-                        </button>
-                        <div class="icon--new">
-                            <img src="image/iconnew.png" alt="">
-                        </div>
-                    </div>
-                    <div class="content__p3">
-                        <img src="image/oto3.png" alt="">
-                        <button>add to cart
-                            <img src="image/cart.png" alt="">
-                        </button>
-                        <div class="icon--sale">
-                            <img src="image/iconsale.png" alt="">
-                        </div>
-                    </div>
-                </div> -->
+            <div class="row row--products">
                 <div class="owl-carousel owl-theme owl--carousel">
                     <div class="item">
                         <div class="content__p1">
@@ -453,7 +428,7 @@
                 </div>
             </div>
             <!-- SECTION-BEGIN-4 -->
-            <div class="row row--section1 section4">
+            <div class="row row--title section4">
                 <div class="row__title">
                     <h3>LATEST NEWS</h3>
                     <p>new beetle design
@@ -461,7 +436,7 @@
                 </div>
             </div>
             <!-- SECTION-BEGIN-5 -->
-            <div class="row row--section5">
+            <div class="row row--CarManufacturer">
                 <div class="content">
                     <div class="content__p1">
                         <img class="image__moto moto--active" src="image/sec5-1.png" alt="">
@@ -500,7 +475,7 @@
                 </div>
             </div>
             <!-- SECTION-BEGIN-6 -->
-            <div class="row row--section1 section6">
+            <div class="row row--title section6">
                 <div class="row__title">
                     <h3>BEST SELLER of last month</h3>
                     <p>TOP PRODUCTS OF last month
@@ -508,8 +483,8 @@
                 </div>
             </div>
             <!-- SECTION-BEGIN-789-->
-            <div class="section789">
-                <div class="row row--section2 section--7">
+            <div class="section--group">
+                <div class="row row--service section--7">
                     <div class="content">
                         <div class="content__p1">
                             <div class="img__p1">
@@ -533,7 +508,7 @@
                 </div>
 
 
-                <div class="row row--section2 section8">
+                <div class="row row--service section8">
                     <div class="content">
                         <div class="content__p1">
                             <div class="img__p1">
@@ -556,7 +531,7 @@
                     </div>
                 </div>
 
-                <div class="row row--section9">
+                <div class="row row--Discount">
                     <div class="content">
                         <h3>Get your Discount</h3>
                         <p>Subscribe to our newsletter and get notified about updates,<br />
@@ -569,7 +544,7 @@
 
             <!-- SECTION-BEGIN-10 -->
 
-            <div class="row row--section10">
+            <div class="row row--logoImage">
                 <div class="content">
                     <div class="content__logo logo--1">
                         <img src="image/logi1.png" alt="">
@@ -592,9 +567,9 @@
     </div>
 
     <div class="foodter">
-        <div class="fooodter1">
-            <div class="foodter__sec1">
-                <div class="foodter--sec1">
+        <div class="fooodter-top">
+            <div class="foodter__content">
+                <div class="foodter--text">
                     <ul>
                         <li>
                             P.O. Box 942873 Sacramento
@@ -610,7 +585,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="foodter--sec2">
+                <div class="foodter--icon">
                     <ul>
                         <li><img src="image/icon-f.png" alt=""></li>
 
@@ -618,8 +593,8 @@
                 </div>
             </div>
         </div>
-        <div class="foodter2">
-            <div class="foodter2__content content--1">
+        <div class="fooodter-bottom">
+            <div class="fooodter-bottom__content content--part1">
                 <ul>
                     <li>Track Your Order</li>
                     <li>Returns</li>
@@ -632,7 +607,7 @@
                     <li>*Promotion Details</li>
                 </ul>
             </div>
-            <div class="foodter2__content content--2">
+            <div class="fooodter-bottom__content content--part2">
                 <ul>
                     <li>What's New</li>
                     <li>Gift Cards</li>
@@ -641,7 +616,7 @@
                     <li>Hospitality</li>
                 </ul>
             </div>
-            <div class="foodter2__content content--3">
+            <div class="fooodter-bottom__content content--part3">
                 <ul>
                     <li>About Us</li>
                     <li>Environmental Commitment</li>
@@ -668,6 +643,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/index.js"></script>
 </body>
 

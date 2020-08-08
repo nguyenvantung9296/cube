@@ -15,7 +15,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 $('.icon--nav').click(function(){
-    $('.container-fluid .row__row--sec2 .menu.menu__fa , .background__body').toggleClass('handclicknav opacity');
+    $('.container-fluid .header--wrap .menu.menu--fa , .background__body').toggleClass('handclicknav opacity');
     
 
 })
